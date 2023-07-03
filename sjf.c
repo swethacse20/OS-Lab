@@ -35,7 +35,7 @@ findWaitingTime(){
     w_t[0]=0;
     for(i=1;i<n;i++){
         w_t[i] = b_t[i-1] + w_t[i-1];
-        w_t_avg =+ w_t[i];
+        w_t_avg += w_t[i];
     }
      w_t_avg /= n;
 }
